@@ -183,7 +183,7 @@ app.post('/success', async (req, res) => {
     const queryParams = new URLSearchParams(req.body).toString();
 
     // Redirect to the failure page with the query parameters
-    return res.redirect(`http://localhost:3000/order-response?${queryParams}`);
+    return res.redirect(`https://parijathandicraft.com/order-response?${queryParams}`);
   } catch (error) {
     console.log("Error in failure handler:", error);
     res.status(500).json({ message: "Internal Server Error" });
